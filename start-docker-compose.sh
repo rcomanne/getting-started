@@ -8,7 +8,7 @@ cd traefik
 docker-compose up --detach --remove-orphans
 cd -
 echo 'Started Traefik'
-echo 'Go to Traefik dashboard --> traefik.docker.localhost:8080'
+echo 'Go to Traefik dashboard --> traefik.docker.localhost'
 
 echo ''
 echo 'Starting Vault...'
@@ -16,7 +16,7 @@ cd vault
 docker-compose up --detach --remove-orphans
 cd -
 echo 'Started Vault'
-echo 'Go to Vault UI --> vault.docker.localhost:8200'
+echo 'Go to Vault UI --> vault.docker.localhost'
 echo 'Vault root token = root_token'
 
 echo ''
@@ -25,4 +25,4 @@ cd elk
 docker-compose up --detach --remove-orphans
 cd -
 echo 'Started the ELK stack'
-echo 'Go to Kibana --> kibana.docker.localhost:5601'
+echo 'Go to Kibana --> kibana.docker.localhost'
