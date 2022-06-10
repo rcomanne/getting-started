@@ -15,7 +15,8 @@ services:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
-      - "traefik.http.routers.whoami.rule=Host(`traefik.docker.localhost`)"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.docker.localhost`)"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
 
   whoami:
     image: traefik/whoami

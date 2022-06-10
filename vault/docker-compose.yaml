@@ -8,4 +8,5 @@ services:
     environment:
       - VAULT_DEV_ROOT_TOKEN_ID=root_token
     labels:
-      - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
+      - "traefik.http.routers.vault.rule=Host(`vault.docker.localhost`)"
+      - "traefik.http.services.vault.loadbalancer.server.port=8200"

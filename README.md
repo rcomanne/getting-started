@@ -16,7 +16,7 @@ $ docker-compose up
 
 ### Access
 #### Kibana  
-`kibana.docker.localhost:5601`  
+`kibana.docker.localhost`  
 `localhost:5601`
 
 ## Traefik
@@ -30,7 +30,7 @@ $ docker-compose up
 ```
 ### Access
 #### Traefik  
-`traefik.docker.localhost:8080`  
+`traefik.docker.localhost`  
 `localhost:8080`
 
 #### Whoami
@@ -47,4 +47,4 @@ $ docker-compose up
 ### Access
 #### Vault UI  
 `localhost:8200`  
-`vault.docker.localhost:8200`
+`vault.docker.localhost`
