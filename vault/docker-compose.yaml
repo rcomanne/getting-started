@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  vault:
+    image: vault:1.9.6
+    ports:
+      - "8200:8200"
+    environment:
+      - VAULT_DEV_ROOT_TOKEN_ID=root_token
+    labels:
+      - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
