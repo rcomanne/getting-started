@@ -15,7 +15,7 @@ $ docker-compose up
 ```
 
 ### Access
-Kibana
+#### Kibana  
 `kibana.docker.localhost:5601`  
 `localhost:5601`
 
@@ -29,7 +29,7 @@ $ cd traefik
 $ docker-compose up
 ```
 ### Access
-#### Traefik 
+#### Traefik  
 `traefik.docker.localhost:8080`  
 `localhost:8080`
 
@@ -45,6 +45,6 @@ $ docker-compose up
 ```
 
 ### Access
-Vault UI 
+#### Vault UI  
 `localhost:8200`  
 `vault.docker.localhost:8200`
